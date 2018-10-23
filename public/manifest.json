@@ -49,7 +49,7 @@
       "density": "4.0"
     }
   ],
-  "start_url": "https://telerik.github.io/react-dashboard/index.html",
+  "start_url": "https://telerik.github.io/kendo-react-material-dashboard/index.html",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

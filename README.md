@@ -29,16 +29,16 @@ We can also create a manifest.json file that is used to tell the device running 
 [The Web App Manifest](https://developers.google.com/web/fundamentals/web-app-manifest/?utm_source=devtools)
 
 Once the application is up and running, we can check its functionality by inspecting the Application tab of the browser console:
-![Service Worker](https://github.com/telerik/react-dashboard/blob/master/src/assets/help_images/sw.png)
+![Service Worker](https://github.com/telerik/kendo-react-material-dashboard/blob/master/src/assets/help_images/sw.png)
 
 We can then check the "Offline" option in order to check the offline functionality of the app:
-![Offline](https://github.com/telerik/react-dashboard/blob/master/src/assets/help_images/offline.png)
+![Offline](https://github.com/telerik/kendo-react-material-dashboard/blob/master/src/assets/help_images/offline.png)
 
 We can inspect the cached assets:
-![Local assets](https://github.com/telerik/react-dashboard/blob/master/src/assets/help_images/cached.png)
+![Local assets](https://github.com/telerik/kendo-react-material-dashboard/blob/master/src/assets/help_images/cached.png)
 
 Add the app to the home screen:
-![Add to home screen](https://github.com/telerik/react-dashboard/blob/master/src/assets/help_images/add_to_home.png)
+![Add to home screen](https://github.com/telerik/kendo-react-material-dashboard/blob/master/src/assets/help_images/add_to_home.png)
 
 Added to apps:
-![Browser dashboard](https://github.com/telerik/react-dashboard/blob/master/src/assets/help_images/dashboard.png)
+![Browser dashboard](https://github.com/telerik/kendo-react-material-dashboard/blob/master/src/assets/help_images/dashboard.png)
