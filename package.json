@@ -72,7 +72,7 @@
     "webpack-manifest-plugin": "1.2.1",
     "whatwg-fetch": "2.0.3"
   },
-  "homepage": "http://telerik.github.io/kendo-kendo-react-material-dashboard",
+  "homepage": "http://telerik.github.io/kendo-react-material-dashboard",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",

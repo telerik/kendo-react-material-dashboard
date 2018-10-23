@@ -8,6 +8,8 @@ import Profile from '../Profile';
 import { withGithubUser, withGithubApi } from '../Github';
 
 class MainMenu extends Component {
+    rootUrl = process.env.REACT_APP_PUBLIC_URL;
+
     constructor(props) {
         super();
 
@@ -58,11 +60,11 @@ class MainMenu extends Component {
                             </div>
                         </div>)}
                         <div className={'content-wrapper col'}>
-                            {this.props.location.pathname === '/' ? <Redirect from="/" to="dashboard" /> : null}
-                            <Route path="/dashboard" component={Dashboard} />
-                            <Route path="/issues" component={IssuesIndex} />
-                            <Route path="/profile" component={withGithubApi(withGithubUser(Profile))} />
-                            <Route path="/signin" component={Signin} />
+                            {this.props.location.pathname === `${this.rootUrl}/` ? <Redirect from={`${this.rootUrl}/`} to="dashboard" /> : null}
+                            <Route path={`${this.rootUrl}/dashboard`} component={Dashboard} />
+                            <Route path={`${this.rootUrl}/issues`} component={IssuesIndex} />
+                            <Route path={`${this.rootUrl}/profile`} component={withGithubApi(withGithubUser(Profile))} />
+                            <Route path={`${this.rootUrl}/signin`} component={Signin} />
                         </div>
                     </div>
                 </div>
