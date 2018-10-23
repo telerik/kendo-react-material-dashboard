@@ -1,0 +1,42 @@
+#dashboard {
+
+    .k-content {
+        padding: 0;
+        overflow: visible;
+    }
+
+    .height-1 {
+        min-height: 400px;
+    }
+
+    .comp-label {
+        .issues-count {
+            font-size: 3.5rem;
+            font-weight: 200;
+            line-height: 1;
+        }
+        .issues-label {
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
+    .k-chart-donut-center {
+        transform: scale(.5);
+
+        .chart-label {
+            position: relative;
+            transform: scale(2);
+            width: 50%;
+            transition: color .3s ease;
+
+            .percentage {
+                position: absolute;
+                top: .4rem;
+                right: 0;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

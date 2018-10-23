@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'node_modules/@progress/kendo-theme-material/scss/all';
+
+@import 'styles/variables';
+@import 'styles/bootstrap-custom';
+@import 'styles/globals';
+@import 'styles/nav';
+@import 'styles/header';
+@import 'styles/dashboard';
+@import 'styles/issues';
+@import 'styles/profile';
+@import 'styles/login';
+@import 'styles/typography';
+
+body {
+  margin:0;
+  background-color: $body-bg;
+  font-size: $font-size-root;
+}
+
+.k-i-loading {
+  font-size: 20vh;
+  color: #111;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -.5em 0 0 -.5em;
+}
