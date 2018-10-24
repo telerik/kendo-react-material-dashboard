@@ -13,6 +13,8 @@ import { Provider } from "react-redux";
 const AppWithRouting = withRouter(App);
 
 
+console.log(process.env.REACT_APP_PUBLIC_URL);
+
 ReactDOM.render((
     <Provider store={issuesStore}>
         <Ripple>
