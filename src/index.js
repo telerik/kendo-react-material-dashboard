@@ -16,7 +16,7 @@ const AppWithRouting = withRouter(App);
 ReactDOM.render((
     <Provider store={issuesStore}>
         <Ripple>
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <BrowserRouter basename={process.env.REACT_APP_PUBLIC_URL}>
                 <AppWithRouting />
             </BrowserRouter>
         </Ripple>
