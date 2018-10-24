@@ -58,7 +58,7 @@ class MainMenu extends Component {
                             </div>
                         </div>)}
                         <div className={'content-wrapper col'}>
-                            <Redirect from="/" to="dashboard" />
+                            <Redirect from="*" to="/dashboard" />
                             <Route path="/dashboard" component={Dashboard} />
                             <Route path="/issues" component={IssuesIndex} />
                             <Route path="/profile" component={withGithubApi(withGithubUser(Profile))} />
