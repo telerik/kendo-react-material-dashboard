@@ -7,6 +7,9 @@ class Dashboard extends Component {
     login = () => {
         this.props.history.push('dashboard');
     }
+    handleClick = (event) => {
+        event.preventDefault();
+    }
     render() {
         return (
             <div id="login" className="justify-content-center">
@@ -25,7 +28,7 @@ class Dashboard extends Component {
                                     <InputLabel>Password</InputLabel>
                                     <Input type="password" className="form-control" />
                                     <p className="text-xs-right small">
-                                        <a>Forgot it?</a>
+                                        <a href="/" onClick={this.handleClick}>Forgot it?</a>
                                     </p>
                                 </div>
                                 <div className="form-group mb-0 text-right">
