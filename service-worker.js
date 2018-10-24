@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/kendo-react-material-dashboard/precache-manifest.6b51f39958edc40aca3001a9dc36451c.js"
+  "/kendo-react-material-dashboard/precache-manifest.688c4e24566a20f256d12733fc12849d.js"
 );
 
 workbox.clientsClaim();
