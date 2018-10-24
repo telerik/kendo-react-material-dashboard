@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.068c6d18.chunk.css",
-  "main.js": "/static/js/main.b9549312.chunk.js",
-  "main.js.map": "/static/js/main.b9549312.chunk.js.map",
-  "static/js/1.10f28309.chunk.js": "/static/js/1.10f28309.chunk.js",
-  "static/js/1.10f28309.chunk.js.map": "/static/js/1.10f28309.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.068c6d18.chunk.css.map": "/static/css/main.068c6d18.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.6ffd1e4d6c44bf70703ab18d7b78ec8d.js": "/precache-manifest.6ffd1e4d6c44bf70703ab18d7b78ec8d.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/kendo-react-material-dashboard/static/css/main.068c6d18.chunk.css",
+  "main.js": "/kendo-react-material-dashboard/static/js/main.11d47ad3.chunk.js",
+  "main.js.map": "/kendo-react-material-dashboard/static/js/main.11d47ad3.chunk.js.map",
+  "static/js/1.10f28309.chunk.js": "/kendo-react-material-dashboard/static/js/1.10f28309.chunk.js",
+  "static/js/1.10f28309.chunk.js.map": "/kendo-react-material-dashboard/static/js/1.10f28309.chunk.js.map",
+  "runtime~main.js": "/kendo-react-material-dashboard/static/js/runtime~main.31c294a2.js",
+  "runtime~main.js.map": "/kendo-react-material-dashboard/static/js/runtime~main.31c294a2.js.map",
+  "static/css/main.068c6d18.chunk.css.map": "/kendo-react-material-dashboard/static/css/main.068c6d18.chunk.css.map",
+  "index.html": "/kendo-react-material-dashboard/index.html",
+  "precache-manifest.8ad73265dd17834856c852497c17f923.js": "/kendo-react-material-dashboard/precache-manifest.8ad73265dd17834856c852497c17f923.js",
+  "service-worker.js": "/kendo-react-material-dashboard/service-worker.js"
 }
