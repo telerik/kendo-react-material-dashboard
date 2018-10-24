@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/kendo-react-material-dashboard/static/css/main.068c6d18.chunk.css"
   },
   {
-    "revision": "e6b37f8d40287bf78cbd815be22ca3d6",
+    "revision": "5ffcae63a5b29b6aec87a9b44bbbeb02",
     "url": "/kendo-react-material-dashboard/index.html"
   }
 ];
