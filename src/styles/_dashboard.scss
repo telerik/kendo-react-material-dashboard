@@ -1,5 +1,4 @@
 #dashboard {
-
     .k-content {
         padding: 0;
         overflow: visible;
@@ -19,6 +18,10 @@
             font-size: 0.75rem;
             font-weight: bold;
             text-transform: uppercase;
+        }
+
+        &.label-clickable {
+            cursor: pointer;
         }
     }
 

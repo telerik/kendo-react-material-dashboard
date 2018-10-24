@@ -96,6 +96,11 @@ small,
   }
 }
 
+.k-chart-tooltip p {
+  margin: 0;
+  color: $white;
+}
+
 @media (min-width: 768px) {
   .content-wrapper {
     padding-top: 2rem;

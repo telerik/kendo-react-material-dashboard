@@ -1,16 +1,19 @@
 import React from 'react';
-import { Chart,
+import {
+    Chart,
     ChartSeries,
     ChartSeriesItem,
     ChartCategoryAxis,
     ChartCategoryAxisItem,
     ChartValueAxis,
     ChartValueAxisItem,
-    ChartArea } from '@progress/kendo-react-charts';
+    ChartArea,
+    ChartTooltip,
+} from '@progress/kendo-react-charts';
 
 const ClosedIssues = (props) => {
-    const seriesData =  props.closed
-    const categoryAxis = { baseUnit: 'months', majorGridLines: {visible: false}, majorTicks: { visible: false  }, labels: { step: 4, skip: 2, font: '10px sans-serif' }, line: { visible: false } };
+    const seriesData = props.closed
+    const categoryAxis = { baseUnit: 'months', majorGridLines: { visible: false }, majorTicks: { visible: false }, labels: { step: 4, skip: 2, font: '10px sans-serif' }, line: { visible: false } };
     return (
         <div className="col-12 col-lg-6 col-xl pb-4 text-danger closed-issues">
             <div className="comp-label">
@@ -18,15 +21,16 @@ const ClosedIssues = (props) => {
                 <div className="issues-label">Closed issues</div>
             </div>
             <Chart style={{ height: '80px' }}>
-                <ChartArea background={"white"}/>
+                <ChartArea background={"white"} />
+                <ChartTooltip />
                 <ChartSeries>
-                    <ChartSeriesItem data={seriesData} type="area" line={{ style: "smooth" }} field="count" categoryField="date" aggregate="count" stack={true} gap={0.5} overlay={false} color={"#e91e63"}/>
+                    <ChartSeriesItem data={seriesData} type="area" line={{ style: "smooth" }} field="count" categoryField="date" aggregate="count" stack={true} gap={0.5} overlay={false} color={"#e91e63"} />
                 </ChartSeries>
                 <ChartCategoryAxis>
-                    <ChartCategoryAxisItem {...categoryAxis}/>
+                    <ChartCategoryAxisItem {...categoryAxis} />
                 </ChartCategoryAxis>
                 <ChartValueAxis>
-                    <ChartValueAxisItem visible={false}  majorGridLines="{ visible: false }}"/>
+                    <ChartValueAxisItem visible={false} majorGridLines="{ visible: false }}" />
                 </ChartValueAxis>
             </Chart>
         </div>

@@ -7,7 +7,8 @@ import {
     ChartCategoryAxisItem,
     ChartValueAxis,
     ChartValueAxisItem,
-    ChartArea
+    ChartArea,
+    ChartTooltip
 } from '@progress/kendo-react-charts';
 
 const AllIssues = (props) => {
@@ -27,7 +28,8 @@ const AllIssues = (props) => {
 
     return (
         <div className="col-12 all-issues">
-            <Chart style={{ height: '320px' }}>
+            <Chart style={{ height: '320px' }} zoomable={false}>
+                <ChartTooltip />
                 <ChartArea background={"white"} />
                 <ChartSeries>
                     <ChartSeriesItem data={props.open} type="area" line={{ style: "smooth" }} field="count" categoryField="date" aggregate="count" stack={true} opacity={0.3} gap={0.06} overlay={false} color={"#27c46d"} border={"color: '#27c46d', opacicty: 0.3"} />

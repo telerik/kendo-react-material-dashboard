@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import { Chart,
+import {
+    Chart,
     ChartSeries,
     ChartSeriesItem,
     ChartCategoryAxis,
     ChartCategoryAxisItem,
     ChartValueAxis,
     ChartValueAxisItem,
-    ChartArea } from '@progress/kendo-react-charts';
+    ChartArea,
+    ChartTooltip
+} from '@progress/kendo-react-charts';
 
 class TypesDistribution extends Component {
     seriesColors = [
@@ -71,7 +74,7 @@ class TypesDistribution extends Component {
 
         return (
             <div className="k-card">
-            <h2 className="k-card-header">Types Distribution</h2>
+                <h2 className="k-card-header">Types Distribution</h2>
                 <div className="k-card-body height-1">
                     <div className="row">
                         {
@@ -80,7 +83,7 @@ class TypesDistribution extends Component {
                                     onClick={() => { this.addSeries(button) }}
                                     key={button.label}
                                     style={{ color: button.active ? button.value : this.state.initialGrey }}
-                                    className="col-6 col-sm-4 col-xl-2 comp-label"
+                                    className="col-6 col-sm-4 col-xl-2 comp-label label-clickable"
                                 >
                                     <div className="issues-count">{this.props.data[button.label].length}</div>
                                     <div className="issues-label">{button.label}</div>
@@ -93,13 +96,15 @@ class TypesDistribution extends Component {
                             <Chart style={{ height: '300px' }}
                                 transitions={false}
                                 categoryAxis={categoryAxis}
-                                valueAxis={valueAxis}>
-                                <ChartArea background={"white"}/>
+                                valueAxis={valueAxis}
+                            >
+                                <ChartTooltip />
+                                <ChartArea background={"white"} />
                                 <ChartSeries>
                                     {series}
                                 </ChartSeries>
                                 <ChartValueAxis>
-                                    <ChartValueAxisItem {...valueAxis}/>
+                                    <ChartValueAxisItem {...valueAxis} />
                                 </ChartValueAxis>
                                 <ChartCategoryAxis>
                                     <ChartCategoryAxisItem {...categoryAxis} />
