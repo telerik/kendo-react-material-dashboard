@@ -17,6 +17,7 @@ $enable-print-styles:       false;
 // Grayscale and brand colors for use across Bootstrap.
 
 $primary: #2196F3;
+$accent: #2196F3;
 $secondary: #e10050;
 
 $gray-dark:                 #252830;
@@ -64,7 +65,7 @@ $h6-font-size: 0.5rem;
 $font-weight-bold: 500;
 
 $card-header-text: 1.25rem;
-$card-box-shadow: $box-shadow-depth-4;
+$card-box-shadow: 3rem;
 $card-spacer-y: 1rem;
 $card-spacer-x: 2rem;
 

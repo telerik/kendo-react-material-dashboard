@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'node_modules/@progress/kendo-theme-material/scss/all';
 
 @import 'styles/variables';
 @import 'styles/bootstrap-custom';
@@ -11,6 +10,8 @@
 @import 'styles/profile';
 @import 'styles/login';
 @import 'styles/typography';
+
+@import 'node_modules/@progress/kendo-theme-material/scss/all';
 
 body {
   margin:0;

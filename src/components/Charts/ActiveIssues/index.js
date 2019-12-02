@@ -25,7 +25,7 @@ class ActiveIssuesDash extends React.Component {
             <div className="k-card">
                 <h2 className="k-card-header m-0">Active Issues</h2>
                 <div className="k-card-body">
-                    <TabStrip selected={this.state.selected} onSelect={this.handleSelect} animation={false} className="col-12">
+                    <TabStrip selected={this.state.selected} onSelect={this.handleSelect} animation={false}>
                         <TabStripTab title="All Issues">
                             <div className="row">
                                 <ActiveIssues active={active} count={activeCount} />
